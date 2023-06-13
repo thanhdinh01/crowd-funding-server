@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "server.js": {
+      "memory": 1024,
+      "includeFiles": "db.json"
+    },
+    "authServer.js": {
+      "memory": 1024,
+      "includeFiles": "db.json"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "server.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "authServer.js"
+    }
+  ]
+}

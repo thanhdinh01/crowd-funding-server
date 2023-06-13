@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "evondev",
+      "password": "$2b$10$Vjv3pJY6DgUo2vmniL.9EONytQyoll5M781vq2MDBoWqNGLX10frq",
+      "email": "evondevblog@gmail.com",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjY1NjgyNzE5LCJleHAiOjE2NjU4NTU1MTl9.Va_CAMRq11ak74LiCDXzFREYE0W6L_MTqrxMzNZEF3M"
+    },
+    {
+      "id": 2,
+      "name": "tuantran",
+      "password": "$2b$10$R3TnssJhrYuXi5/u4r9bou/mQ4xllqVf.13rmDqOaPUU4uWyFIUsi",
+      "email": "trananhtuan400@gmail.com",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6InR1YW50cmFuIiwiaWF0IjoxNjY1OTM5NzMyLCJleHAiOjE2NjYxMTI1MzJ9.9FhKpwnSU2bnUNFtLLOFEqC78_DK5a7xJrAzkr-jj1I",
+      "permissions": ["CREATE_CAMPAIGN"]
+    },
+    {
+      "id": 3,
+      "name": "thanhmit",
+      "password": "$2b$10$AGct/7sQP4BUR.Yg4fVq6OTbrQCECttO4tiZO/DQh1vtQI7urRhzK",
+      "email": "thanh@gmail.com",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6InRoYW5obWl0IiwiaWF0IjoxNjg2MjIwMTE0LCJleHAiOjE2ODYzOTI5MTR9.x-g2VT7nEIzAIJ8R8mXlu1w90DGU-LjqxNrOcHkHSyQ"
+    },
+    {
+      "id": 4,
+      "name": "kiem hanh",
+      "password": "$2b$10$PGwUqyi4pzt4Yyu8UqNraO9O.NhmCUnNFoXpow5PcE8TRrCKMdMR2",
+      "email": "kiem@gmail.com",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6ImtpZW0gaGFuaCIsImlhdCI6MTY4NTg2ODA4MywiZXhwIjoxNjg2MDQwODgzfQ.IH4G0dHjqGF7-P-Vc5s_5wuv7X7FQSUdUAKcxXZ2S5k"
+    }
+  ],
+  "categories": [],
+  "campaigns": [
+    {
+      "title": "Building Hope Village",
+      "short_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus perspiciatis libero hic, dolor excepturi numquam eum nam nemo quae repellendus mollitia nihil laborum voluptatum quasi molestias aperiam dolore itaque iste!",
+      "goal": "100",
+      "amount": "200",
+      "prefilled": "10,20",
+      "video": "https://www.youtube.com/watch?v=yYGqCemyGmE&ab_channel=evondev",
+      "country": "Vietnam",
+      "content": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus perspiciatis libero hic, dolor excepturi numquam eum nam nemo quae repellendus mollitia nihil laborum voluptatum quasi molestias aperiam dolore itaque iste!</p>",
+      "startDate": "2022-08-22T17:00:00.000Z",
+      "endDate": "2022-08-27T17:00:00.000Z",
+      "id": 1,
+      "userId": 1
+    },
+    {
+      "title": "thanhmit",
+      "category": "real estate",
+      "description": "toi la thanhmit dep trai",
+      "story": "<p class=\"ql-align-center\"><strong>dung roi day, toi la thanh deptrai</strong></p>",
+      "image": {
+        "normal": "https://i.ibb.co/YT8pVGL/3bf7095c98f3481b5aa9337921d1f03e.jpg",
+        "thumb": "https://i.ibb.co/M5pMJLC/3bf7095c98f3481b5aa9337921d1f03e.jpg"
+      },
+      "goal": "22",
+      "raised_amount": "32",
+      "prefilled": "12",
+      "video": "link",
+      "end_method": "film",
+      "country": "Vietnam",
+      "start_date": "2023-05-25T17:00:00.000Z",
+      "end_date": "2023-05-27T17:00:00.000Z",
+      "id": 4
+    },
+    {
+      "title": "thanhmit",
+      "category": "real estate",
+      "description": "toi la thanhmit dep trai",
+      "story": "<p class=\"ql-align-center\"><strong>dung roi day, toi la thanh deptrai</strong></p>",
+      "image": {
+        "normal": "https://i.ibb.co/YT8pVGL/3bf7095c98f3481b5aa9337921d1f03e.jpg",
+        "thumb": "https://i.ibb.co/M5pMJLC/3bf7095c98f3481b5aa9337921d1f03e.jpg"
+      },
+      "goal": "22",
+      "raised_amount": "32",
+      "prefilled": "12",
+      "video": "link",
+      "end_method": "film",
+      "country": "Vietnam",
+      "start_date": "2023-05-25T17:00:00.000Z",
+      "end_date": "2023-05-27T17:00:00.000Z",
+      "id": 5
+    }
+  ]
+}
