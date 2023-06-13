@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js --ignore db.json",
-    "startAuth": "nodemon authServer.js --ignore db.json"
+    "start": "nodemon server.js",
+    "startAuth": "nodemon authServer.js"
   },
   "keywords": [],
   "author": "",
