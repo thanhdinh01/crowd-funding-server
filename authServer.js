@@ -6,7 +6,7 @@ const fs = require("fs");
 const app = express();
 app.use(express.json());
 const verifyToken = require("./middleware/auth");
-const rawdata = fs.readFile("db.json");
+const rawdata = fs.readFileSync("db.json");
 const database = JSON.parse(rawdata);
 let users = database.users;
 const cors = require("cors");
