@@ -20,7 +20,7 @@
       "name": "thanhmit",
       "password": "$2b$10$AGct/7sQP4BUR.Yg4fVq6OTbrQCECttO4tiZO/DQh1vtQI7urRhzK",
       "email": "thanh@gmail.com",
-      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6InRoYW5obWl0IiwiaWF0IjoxNjg2MjIwMTE0LCJleHAiOjE2ODYzOTI5MTR9.x-g2VT7nEIzAIJ8R8mXlu1w90DGU-LjqxNrOcHkHSyQ"
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6InRoYW5obWl0IiwiaWF0IjoxNjg2NjYwODQ4LCJleHAiOjE2ODY4MzM2NDh9.LD-aCb6aLw2pSav8XTwQby90x_0OGLKWyy-0g1h4HB8"
     },
     {
       "id": 4,
@@ -28,6 +28,13 @@
       "password": "$2b$10$PGwUqyi4pzt4Yyu8UqNraO9O.NhmCUnNFoXpow5PcE8TRrCKMdMR2",
       "email": "kiem@gmail.com",
       "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6ImtpZW0gaGFuaCIsImlhdCI6MTY4NTg2ODA4MywiZXhwIjoxNjg2MDQwODgzfQ.IH4G0dHjqGF7-P-Vc5s_5wuv7X7FQSUdUAKcxXZ2S5k"
+    },
+    {
+      "id": 5,
+      "name": "dinh duy thanh",
+      "password": "$2b$10$vkU.OWjUO14O6mj8UN/LYeMpMMNfTNiEdt39xyejvHYVfiaOkluom",
+      "email": "thanh5@gmail.com",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6ImRpbmggZHV5IHRoYW5oIiwiaWF0IjoxNjg2NjYwODE5LCJleHAiOjE2ODY4MzM2MTl9.BCDurVK0_tra0h2EyG6VVUbfWshWyNnVW1FqdhHtCAI"
     }
   ],
   "categories": [],
