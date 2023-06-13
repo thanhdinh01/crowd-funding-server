@@ -63,25 +63,49 @@ app.get("/me", verifyToken, (req, res) => {
 });
 app.post("/auth/login", (req, res) => {
   const email = req.body.email;
-  const user = users.find((user) => {
-    return user.email === email;
-  });
-  if (!user) return res.sendStatus(401);
-  const dbPassword = user.password;
-  bcrypt.compare(req.body.password, dbPassword, (err, hash) => {
-    if (err || !hash) {
-      res.status(403).json({
-        statusCode: 403,
-        error: {
-          message: "Password does not match",
-        },
-      });
+  fs.readFile("db.json", "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).json({ message: "Error server" });
     }
-    const tokens = generateTokens(user);
+    const db = JSON.parse(data);
+    const user = db.users.find((user) => user.email === email);
+    if (!user) return res.sendStatus(401);
+    const dbPassword = user.password;
+    bcrypt.compare(req.body.password, dbPassword, (err, hash) => {
+      if (err || !hash) {
+        res.status(403).json({
+          statusCode: 403,
+          error: {
+            message: "Password does not match",
+          },
+        });
+      }
+      const tokens = generateTokens(user);
 
-    updateRefreshToken(user.name, tokens.refreshToken);
-    res.json(tokens);
+      updateRefreshToken(user.name, tokens.refreshToken);
+      res.json(tokens);
+    });
+    res.json(user);
   });
+  // const user = users.find((user) => {
+  //   return user.email === email;
+  // });
+  // if (!user) return res.sendStatus(401);
+  // const dbPassword = user.password;
+  // bcrypt.compare(req.body.password, dbPassword, (err, hash) => {
+  //   if (err || !hash) {
+  //     res.status(403).json({
+  //       statusCode: 403,
+  //       error: {
+  //         message: "Password does not match",
+  //       },
+  //     });
+  //   }
+  //   const tokens = generateTokens(user);
+
+  //   updateRefreshToken(user.name, tokens.refreshToken);
+  //   res.json(tokens);
+  // });
 });
 
 app.post("/token", (req, res) => {
