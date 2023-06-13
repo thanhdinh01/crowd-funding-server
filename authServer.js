@@ -62,6 +62,7 @@ app.get("/me", verifyToken, (req, res) => {
   // res.json(user);
 });
 app.post("/auth/login", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
   const email = req.body.email;
   fs.readFile("db.json", "utf8", (err, data) => {
     if (err) {
